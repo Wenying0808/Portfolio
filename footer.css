@@ -1,0 +1,28 @@
+.social-section{
+    position:relative;
+    left:0;
+    bottom:0;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .social-section img{
+    cursor:hand;
+    width:24px;
+    height:24px;
+  }
+
+  .social-section img:hover{
+    transform: scale(1.5);
+  }
+
+/*
+@media (max-width: 50rem){
+    .social-section {padding: 30px;
+    }
+}
+*/

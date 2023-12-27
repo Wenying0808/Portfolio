@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="breathingApp.css">
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="section.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <title>Breathing Tunes</title>
+  </head>
+
+  <body>
+    <!--navbar menu-->
+    <ul class="navbarMenu">
+      <a href="aboutMe.html" target="_self"><li>About Me</li></a>
+      <a href="work.html" target="_self"><li>Work</li></a>
+      <a href="igxPlatform.html" target="_self"><li>IGX Platform</li></a>
+      <a href="sciaEngineer.html" target="_self"><li>SCIA Engineer</li></a>
+      <a href="breathingApp.html" target="_self"><li class="ActivePage">Breathing App</li></a>
+    </ul>
+    <!--navbar component-->
+    <nav id="navbar" class="navbar">
+      <img class="website-logo" src="src/ic_website logo.svg" alt="website-logo"/>
+      <div class="navbarMenuIconDiv">
+          <a><img class="navbarCloseMenu" src="src/ic_close navbar menu.svg"/></a>
+          <a><img class="navbarOpenMenu" src="src/ic_navbar menu.svg"/></a> 
+      </div>
+      <ul> 
+          <li><a href="aboutMe.html" >About Me</a></li>
+          <li><a href="work.html">Work</a></li>  
+      </ul>
+    </nav>
+
+    <div class="container">
+      <!--Product Landing-->
+      <section class="img-section">
+        <img class="landing-img" src="src/img_work-Somnox.png" />
+      </section>
+
+      <!--Intro-->
+      <section class="intro-section">
+        <div class="section-title">
+          Ecosystem
+        </div>
+        <div class="section-description">
+          This app serves as the ideal companion to the Sleep Robot, crafting a customized breathing rhythm for ultimate relaxation. Users can tailor personalized breathing rhythm through the app.
+        </div>
+        <div class="ecosystem">
+          <div class="es-sleepRobot">
+            <img src="src/ic_somnox-sleep robot.png"/>
+            <div class="es-titleAndDescription">
+              <div class="es-title">Sleep Robot</div>
+              <div class="es-description">It detects and matches your breathing rate and rhythm; then, the rhythm gradually slows to a sleep-inducing pace.</div>
+            </div>
+          </div>
+            
+          <div class="es-mobileApp">
+            <img src="src/ic_somnox-mobile app.png"/>
+            <div class="es-titleAndDescription">
+              <div class="es-title">Mobile App</div>
+              <div class="es-description">It customizes the Sleep Robot for relaxation experience, like adjusting the breathing rhythm or selecting relaxation music and sounds.</div>
+            </div>  
+          </div>
+
+          <div class="es-smartWatch">
+            <img src="src/ic_somnox-smart watch.png"/>
+            <div class="es-titleAndDescription">
+              <div class="es-title">Smart Watch</div>
+              <div class="es-description">Users might use smart watches to capture their sleep data and breathing rate.</div>
+            </div>  
+          </div>
+
+        </div>
+      </section>
+
+      <!--Challenges-->
+      <section class="challenge-section">
+        <div class="section-title">
+          Challenges
+        </div>
+        <div class="section-description">
+          “ Users lack a feedback loop between breathing programs and user goals. “
+        </div>
+        <img class="challenge-section-img" src="src/img_work-Somnox-Challenge.png"/>
+      </section>
+
+      <!--Insights-->
+      <section class="insight-section">
+        <div class="section-title">
+          Research Insights
+        </div>
+        <div class="section-description">
+          More explorations and experiments on breathing exercise with sleep robots results in higher satisfaction and more noticeable sleep improvement.
+        </div>
+        <img class="insight-section-img" src="src/img_work-Somnox-Research Insight.png"/>
+      </section>
+
+      <!--Proposals-->
+      <section class="proposal-section">
+        <div class="section-title">
+          Proposals
+        </div>
+
+        <div class="section-description">
+          <li>Guide users step-by-step to comprehend their sleep problems and goals</li>
+          <li>Propose tailored breathing exercises based on their needs</li>
+          <li>Collect both subjective and objective experiences as input to generate a trackable overview of breathing exercise outcomes</li>
+        </div>                 
+
+        <img class="proposal-section-img" src="src/img_work-Somnox-Proposal App Design.png"/>
+
+        <a href="https://somnox.com/app/" target="_blank">
+          <button >Explore App</button>
+        </a>         
+      </section>
+
+      <!--Footer-->
+      <section class="social-section">
+        <a href="https://www.linkedin.com/in/wenying-chang-b5539a165/" target=”_blank”><img src="src/ic_social_linkdein.svg" alt="linkedin"/></a>
+        <a href="" target=”_blank”><img src="src/ic_social_figma.svg" alt="figma"/></a>
+        <a href="https://github.com/Wenying0808" target=”_blank”><img src="src/ic_social_github.svg" alt="github"/></a>
+        <a href="https://changwenyingnl.medium.com/" target=”_blank”> <img src="src/ic_social_medium.svg" alt="medium"/></a>
+      </section>
+
+    </div>
+    <script src="navbar.js"></script>
+  </body>
+
+
+</html>

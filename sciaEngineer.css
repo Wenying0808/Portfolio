@@ -1,0 +1,213 @@
+/*Reset All*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+}
+  
+  html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  body{
+    font-family: "Open Sans", Sans-serif;
+    width:100%;
+    top:0;
+    left:0;
+    background:var(--main-white, #FFFFFF);
+    overflow-x: hidden;
+    
+  }
+
+  .container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position:relative;
+    top:96px;
+    left:0;
+  }
+
+  /* All Sections*/
+
+  .intro-section, .result-section{
+    background: var(--Background-1, #FBFFFF);
+  }
+
+  .challenge-section, .release-section{
+    background: var(--Background-2, #F6FCFF);
+  }
+
+  /*Section Image*/
+
+  .img-section{
+    padding:0;
+  }
+
+  .landing-img{
+    max-width:100%;
+    height:auto;
+    display:block;
+  }
+
+  /*Section Challenges*/
+
+  .challenge-section-img{
+    width: 700px;
+  }
+
+  /*Section Results*/
+  .feature-img-and-desciption{
+    display: flex;
+    padding-bottom: 10px;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .feature-img{
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.35);
+  }
+
+  .feature-description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .feature-icon-and-label{
+    display: flex;
+    width: 500px;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .feature-icon{
+    width: 100px;
+    height: 100px;
+  }
+
+  .feature-label{
+    width:100%;
+    color: var(--main-purple, #4758DC);
+    /* Website/Section/Feature */
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 36px */
+  }
+
+  .feature-text{
+    padding-left: 10px;
+    color: var(--main-gray, #757575);
+
+    /* Website/Section/Description Bullet */
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 200%; /* 36px */
+  }
+
+/*Section Releases*/
+  .release-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+  }
+
+  .release{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .release-label{
+    color: var(--main-purple, #4758DC);
+    /* Website/Section/Realease */
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 36px */
+  }
+
+  iframe{
+    border-radius: 8px;
+  }
+
+
+  @media (max-width: 50rem){
+
+    /*Section Challenges*/
+    .challenge-section-img{
+      width: 350px;
+    }
+
+    /*Section Results*/
+    .feature-img-and-desciption{
+      display: flex;
+      padding-bottom: 10px;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .feature-img{
+      width: 280px;
+      border-radius: 6px;
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.35);
+    }
+
+    .feature-description{
+      gap: 15px;
+    }
+
+    .feature-icon-and-label{
+      display: flex;
+      width: 280px;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .feature-icon{
+      width: 50px;
+      height: 50px;
+    }
+
+    .feature-label{
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .feature-text{
+      font-size: 12px;
+    }
+
+    /*Section Releases*/
+    .release-wrapper{
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .release{
+      gap: 10px;
+    }
+
+    .release-label{
+      font-size: 12px;
+    }
+
+  }

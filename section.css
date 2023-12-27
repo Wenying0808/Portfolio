@@ -1,0 +1,52 @@
+section {
+    display: flex;
+    width: 100%;
+    padding: 60px 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.section-title{
+    font-size: 32px;
+    font-style: bold;
+    font-weight: 700;
+    line-height: auto;
+    letter-spacing: 0em;
+    text-align: left;
+    
+    color: var(--main-purple, #4758DC);
+    padding: 10px;
+    border-bottom: 2px solid var(--main-purple, #4758DC);
+}
+
+.section-description{
+    max-width: 700px;
+    color: var(--main-gray, #757575);
+    text-align: center;
+    /* Website/Section/Intro */
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%; /* 36px */
+}
+
+@media (max-width: 50rem){
+    
+    section{
+        padding: 30px 20px;
+        gap: 20px;
+        min-width:300px;
+    }
+
+    .section-title{
+        font-size:20px;
+    }
+
+    .section-description{
+        max-width: 350px;
+        min-width: 280px;
+        font-size: 12px;
+    }
+}

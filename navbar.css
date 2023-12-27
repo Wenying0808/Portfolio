@@ -1,0 +1,150 @@
+.navbar{
+    box-sizing:border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    margin:0;
+    position: fixed;
+    width: 100%;
+    height: 96px;
+    left: 0px;
+    top: 0px;
+    
+    background: var(--main-white);
+    box-shadow: 0px 0px 20px 0px #0000001A;
+
+    z-index:1;
+  
+  }
+  
+  .website-logo{
+    width:56px;
+    height:56px;
+  }
+  
+  ul{
+    list-style-type: none;
+    margin:0 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 60px;
+    opacity: 1;
+  }
+  
+  
+  li a{
+  text-decoration:none;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--main-black);
+  }
+  
+  li a:hover{
+    color: var(--main-purple, #4758DC);
+    cursor:hand;
+  }
+
+  /* Website size color the active page differently*/
+  .ActivePage a{
+    color: var(--main-purple, #4758DC);
+    cursor:pointer;
+    font-weight:800
+  }
+
+  /* Mobile size color the active page differently*/
+
+  .ActivePage{
+    color: var(--main-purple, #4758DC);
+    cursor:pointer;
+    font-weight:800
+  }
+
+
+  .navbarMenuIconDiv{
+    display:none;
+  }
+
+
+  .navbarMenu{
+    display:none;
+  }
+
+
+  @media (max-width: 50rem){
+
+    .navbar{
+      padding: 20px 20px;
+    }
+    ul{
+      display:none;
+      gap:20px;
+    }
+    li a{
+      font-size:16px;
+    }
+
+    .navbarMenuIconDiv{
+      display:flex;
+    }
+
+    .navbarOpenMenu{
+      cursor: pointer;
+    }
+
+
+    .navbarCloseMenu{
+      display:none;
+    }
+  
+
+    .navbarMenu{
+      display: flex;
+      
+    }
+    .navbarMenu a{
+      width: 100%;
+      height: 56px;
+      padding: 16px 10px;
+      justify-content: center;
+      align-items: center;
+      background: var(--main-white, #FFF);
+      color: var(--main-gray, #757575);
+      text-align: center;
+      font-family: "Open Sans";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: capitalize;
+      text-decoration: none;
+    }
+    .navbarMenu a:hover{
+      background: var(--main-zumtho, #E1EBFF);
+      color: var(--main-purple, #4758DC);
+    }
+    
+  }
+
+  /*JS file adds additional class to show the navmenu when click the openmenu icon*/
+  .navbarMenu.show-menu{
+    position:relative;
+    top: 96px;
+    left: 0;
+    display: flex;
+    gap: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background: rgba(0, 0, 0, 0.25);
+
+  }
+

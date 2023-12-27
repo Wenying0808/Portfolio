@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="work.css">
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="section.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <title>WY Portfolio</title>
+  </head>
+
+  <body>
+    <!--navbar menu-->
+    <ul class="navbarMenu">
+      <a href="aboutMe.html" target="_self"><li>About Me</li></a>
+      <a href="work.html" target="_self"><li class="ActivePage">Work</li></a>
+      <a href="igxPlatform.html" target="_self"><li>IGX Platform</li></a>
+      <a href="sciaEngineer.html" target="_self"><li>SCIA Engineer</li></a>
+      <a href="breathingApp.html" target="_self"><li>Breathing App</li></a>
+    </ul>
+
+    <!--navbar component-->
+    <nav id="navbar" class="navbar">
+      <img class="website-logo" src="src/ic_website logo.svg" alt="website-logo"/>
+      <div class="navbarMenuIconDiv">
+          <a><img class="navbarCloseMenu" src="src/ic_close navbar menu.svg"/></a>
+          <a><img class="navbarOpenMenu" src="src/ic_navbar menu.svg"/></a> 
+      </div>
+      <ul> 
+          <li><a href="aboutMe.html">About Me</a></li>
+          <li class="ActivePage"><a href="work.html">Work</a></li>  
+      </ul>
+    </nav>
+  
+    <div class="container">
+      <section class="projects-section">
+          <!--<div class="section-title">Web Applications</div>-->
+          <div class="projects-grids">
+          <a class="project-tile" href="igxPlatform.html" target="_self">
+            <div class="project-overlay">
+              <div class="project-overlay-title">IGX Platform</div>
+              <div class="project-overlay-description">The IGX Platform empowers scientists to analyze genomic data with flexibility and ease.</div>
+            </div>
+            <img class="project-img" src="src/img_work-Igx.png" alt=""/>
+          </a>
+          <a class="project-tile" href="sciaEngineer.html" target="_self">
+            <div class="project-overlay">
+              <div class="project-overlay-title">SCIA Engineer</div>
+              <div class="project-overlay-description">SCIA Engineer empowers civil engineers with modeling, analysis, and iteration for optimal structural solutions.</div>
+            </div>
+            <img class="project-img" src="src/img_work-Scia Engineer.png" alt=""/>
+          </a>
+          <a class="project-tile" href="breathingApp.html" target="_self">
+            <div class="project-overlay">
+              <div class="project-overlay-title">Breathing Tunes</div>
+              <div class="project-overlay-description">The App crafts a personalized breathing rhythm, establishing a feedback loop for ultimate relaxation.</div>
+            </div>
+            <img class="project-img" src="src/img_work-Somnox.png" alt=""/>
+        </a>
+          </div>
+      </section>
+
+      <!--Footer-->
+      <section class="social-section">
+        <a href="https://www.linkedin.com/in/wenying-chang-b5539a165/" target=”_blank”><img src="src/ic_social_linkdein.svg" alt="linkedin"/></a>
+        <a href="" target=”_blank”><img src="src/ic_social_figma.svg" alt="figma"/></a>
+        <a href="https://github.com/Wenying0808" target=”_blank”><img src="src/ic_social_github.svg" alt="github"/></a>
+        <a href="https://changwenyingnl.medium.com/" target=”_blank”> <img src="src/ic_social_medium.svg" alt="medium"/></a>
+      </section>
+    </div>
+    <script src="navbar.js"></script>
+  </body>
+
+</html>

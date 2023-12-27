@@ -1,0 +1,167 @@
+/*Reset All*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+}
+  
+  html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  body{
+    font-family: "Open Sans", Sans-serif;
+    width:100%;
+    top:0;
+    left:0;
+    background:var(--main-white, #FFFFFF);
+    overflow-x: hidden;
+    
+  }
+
+  .container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position:relative;
+    top:96px;
+    left:0;
+  }
+  /*Section Image*/
+
+  .img-section{
+    padding:0;
+  }
+
+  .landing-img{
+    max-width:100%;
+    height:auto;
+    display:block;
+  }
+
+  /* All Sections*/
+
+  .intro-section, .insight-section{
+    background: var(--Background-1, #FBFFFF);
+  }
+
+  .challenge-section, .proposal-section{
+    background: var(--Background-2, #F6FCFF);
+  }
+
+
+  /*Section Ecosystem*/
+
+  .ecosystem{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+
+  .es-sleepRobot, .es-mobileApp, .es-smartWatch{
+    display: flex;
+    max-width: 700px;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .ecosystem img{
+    width: 150px;
+    height: 150px;
+  }
+
+  .es-titleAndDescription{
+    display: flex;
+    width: 520px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .es-title{
+    color: var(--main-purple, #4758DC);
+    /* Website/Section/Feature */
+    font-family: Open Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 36px */
+  }
+
+  .es-description{
+    flex: 1 0 0;
+    color: var(--main-gray, #757575);
+    /* Website/Section/Feature Description */
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 27px */
+  }
+
+  /*Section Challenges*/
+
+  .challenge-section-img{
+    width: 400px;
+    height: 400px;
+  }
+
+
+/*Section Research Insights*/
+
+  .insight-section-img{
+    max-width:100%;
+    height:auto;
+    display:block;
+  }
+
+/*Section Proposals*/
+
+.proposal-section-img{
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+
+@media (max-width: 50rem){  
+  
+  .es-sleepRobot, .es-mobileApp, .es-smartWatch{
+    display: flex;
+    width: 100%;
+    min-width: 280px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .ecosystem img{
+    width: 100px;
+    height: 100px;
+  }
+  .es-titleAndDescription{
+    display: flex;
+    width: 280px;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    align-self: stretch;
+  }
+  .es-title{
+    font-size: 14px;
+  }
+  .es-description{
+    font-size: 12px;
+    text-align: center;
+  }
+  .challenge-section-img{
+    width: 200px;
+    height: 200px;
+  }
+
+}

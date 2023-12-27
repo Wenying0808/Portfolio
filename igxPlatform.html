@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="igxPlatform.css">
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="section.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <title>IGX Platform</title>
+  </head>
+
+  <body>
+    <!--navbar menu-->
+    <ul class="navbarMenu">
+      <a href="aboutMe.html" target="_self"><li>About Me</li></a>
+      <a href="work.html" target="_self"><li>Work</li></a>
+      <a href="igxPlatform.html" target="_self"><li class="ActivePage">IGX Platform</li></a>
+      <a href="sciaEngineer.html" target="_self"><li>SCIA Engineer</li></a>
+      <a href="breathingApp.html" target="_self"><li>Breathing App</li></a>
+    </ul>
+    <!--navbar component-->
+    <nav id="navbar" class="navbar">
+      <img class="website-logo" src="src/ic_website logo.svg" alt="website-logo"/>
+      <div class="navbarMenuIconDiv">
+          <a><img class="navbarCloseMenu" src="src/ic_close navbar menu.svg"/></a>
+          <a><img class="navbarOpenMenu" src="src/ic_navbar menu.svg"/></a> 
+      </div>
+      <ul> 
+          <li><a href="aboutMe.html" >About Me</a></li>
+          <li><a href="work.html">Work</a></li>  
+      </ul>
+    </nav>
+
+    <div class="container">
+      <!--Product Landing-->
+      <section class="img-section">
+        <img class="landing-img" src="src/img_work-Igx.png" />
+      </section>
+
+      <!--Intro-->
+      <section class="intro-section">
+        <div class="section-title">
+          IGX Platform
+        </div>
+        <div class="section-description">
+          IGX Platform empowers scientists in the field of antibody discovery research. Comprising a suite of applications, it facilitates the analysis of genomics data and provides intuitive visualization tools for interpreting analysis results.
+        </div>
+      </section>
+
+      <!--Workflow & Challenges-->
+      <section class="challenge-section">
+        <div class="section-title">
+          Workflow & Challenges
+        </div>
+        <div class="section-description">
+          Diving into the realm of antibody discovery involves a sea of sequencing data. Yet, decoding this intricate language poses challenges - supporting diverse repertoires, analyzing massive dataset and navigating complex sequencing information.
+        </div>
+        <img class="workflow-img" src="src/img_work-Igx-Workflow.png"/>
+      </section>
+
+      <!--Antibody Discovery Module-->
+      <section class="module-section">
+        <div class="section-title">
+          Antibody Discovery Module
+        </div>
+        <div class="section-description">
+          A powerful and intuitive suite of applications, empowering researchers to analyze complex genomics data seamlessly.
+        </div>
+        <img class="module-img" src="src/img_work-Igx-App Overview.png"/>
+      </section>
+
+      <!--User Centered Approach-->
+      <section class="approach-section">
+        <div class="section-title">
+          User-Centered Approach
+        </div>
+        <div class="section-description">
+          The IGX Platform is driven by User-Centered Design (UCD), placing our customers at the core of product design and development. Through continuous collaboration, we create intuitive, effective, and user-friendly software, empowering researchers in immune repertoire sequencing.
+        </div>
+        <a href="https://enpicom.com/news/adopting-user-centered-approach-to-biotech-software-design-and-development/" target="_blank">
+          <button>Read Article</button>
+        </a>   
+      </section>
+
+      <!--Releases-->
+      <section class="release-section">
+        <div class="section-title">
+          Releases
+        </div>
+        <div class="release-wrapper">
+          <div class="release">
+            <iframe width="300" height="225" src="https://www.youtube.com/embed/IrgUZ7OIQGA?si=YbD7WVMRBhqCr7WM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="release-label">IGX-Profile</div>
+          </div>
+          <div class="release">
+            <iframe width="300" height="225" src="https://www.youtube.com/embed/xFGqJZN1k5g?si=S0YVb5-NqvFNS_oy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="release-label">IGX-Track</div>
+          </div>
+        </div>
+      </section>
+
+
+      <!--Footer-->
+      <section class="social-section">
+        <a href="https://www.linkedin.com/in/wenying-chang-b5539a165/" target=”_blank”><img src="src/ic_social_linkdein.svg" alt="linkedin"/></a>
+        <a href="" target=”_blank”><img src="src/ic_social_figma.svg" alt="figma"/></a>
+        <a href="https://github.com/Wenying0808" target=”_blank”><img src="src/ic_social_github.svg" alt="github"/></a>
+        <a href="https://changwenyingnl.medium.com/" target=”_blank”> <img src="src/ic_social_medium.svg" alt="medium"/></a>
+      </section>
+    </div>
+  <script src="navbar.js"></script>
+  </body>
+
+
+</html>

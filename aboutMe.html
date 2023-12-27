@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="aboutMe.css">
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="section.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <title>WY Portfolio</title>
+  </head>
+
+  <body>
+    <!--navbar menu-->
+    <ul class="navbarMenu">
+      <a href="aboutMe.html" target="_self"><li class="ActivePage">About Me</li></a>
+      <a href="work.html" target="_self"><li>Work</li></a>
+      <a href="igxPlatform.html" target="_self"><li>IGX Platform</li></a>
+      <a href="sciaEngineer.html" target="_self"><li>SCIA Engineer</li></a>
+      <a href="breathingApp.html" target="_self"><li>Breathing App</li></a>
+    </ul>
+    <!--navbar component-->
+    <nav id="navbar" class="navbar">
+      <img class="website-logo" src="src/ic_website logo.svg" alt="website-logo"/>
+      <div class="navbarMenuIconDiv">
+          <a><img class="navbarCloseMenu" src="src/ic_close navbar menu.svg"/></a>
+          <a><img class="navbarOpenMenu" src="src/ic_navbar menu.svg"/></a> 
+      </div>
+      <ul> 
+          <li class="ActivePage"><a href="aboutMe.html" >About Me</a></li>
+          <li><a href="work.html">Work</a></li>  
+      </ul>
+    </nav>
+
+    <div class="container">
+      <!--Welcome section-->
+      <section id="welcome-section" class="welcome-section">
+        <div class="intro">
+        <h1>Wenying Chang</h1>
+        <p>Results-driven UX designer with 3+ years of experience developing and delivering successful web applications. Proven track record of launching products through innovative strategies, UX research, and prototyping.</p>
+        <a href="" target="_blank">
+          <button >View Resume</button>
+        </a>   
+        <img class="profile-image" src="src/Profile-2.png" alt="profile image"/>
+        </div>
+      </section>
+
+      <!--Expertise section-->
+      <section id="expertise" class="expertise-section">
+        <div class="section-title">Expertise</div>
+        <div class="expertise-grids">
+          <div class="expertise-tile">
+            <img class="expertise-image" src="src/illu_expertise_research.svg" alt="User Research"/>
+            <h3>User Research</h3>
+            <p>Perform explorative and evaluative studies to identify problems</p>
+          </div>
+          <div class="expertise-tile">
+            <img class="expertise-image" src="src/illu_expertise_design iteration.svg" alt="Design & Prototyping"/>
+            <h3>Design & Prototyping</h3>
+            <p>Lead prototyping-based iterative design process to reduce cost of production</p>
+          </div>
+          <div class="expertise-tile">
+            <img class="expertise-image" src="src/illu_expertise_development.svg" alt="Product Development"/>
+            <h3>Product Development</h3>
+            <p>Collaborate and deliver high-quality product efficiently</p>
+          </div>
+        </div>
+      </section>
+
+      <!--I am section-->
+      <section id="iam" class="iam-section">
+        <div class="section-title">I am</div>
+        <div class="iam-grids">
+          <div class="iam-tile">
+            <img class="iam-image" src="src/illu_iam_discover.svg" alt=""/>
+            <h3>Empathetic Discover</h3>
+          </div>
+          <div class="iam-tile">
+            <img class="iam-image" src="src/illu_iam_thinker.svg" alt=""/>
+            <h3>Systematic Thinker</h3>
+          </div>
+          <div class="iam-tile">
+            <img class="iam-image" src="src/illu_iam_collaborator.svg" alt=""/>
+            <h3>Adaptive Collaborator</h3>
+          </div>
+          <div class="iam-tile">
+            <img class="iam-image" src="src/illu_iam_communicator.svg" alt=""/>
+            <h3>Thoughtful Communicator</h3>
+          </div>
+        </div>
+      </section>
+
+      <!--Footer-->
+      <section class="social-section">
+        <a href="https://www.linkedin.com/in/wenying-chang-b5539a165/" target=”_blank”><img src="src/ic_social_linkdein.svg" alt="linkedin"/></a>
+        <a href="" target=”_blank”><img src="src/ic_social_figma.svg" alt="figma"/></a>
+        <a href="https://github.com/Wenying0808" target=”_blank”><img src="src/ic_social_github.svg" alt="github"/></a>
+        <a href="https://changwenyingnl.medium.com/" target=”_blank”> <img src="src/ic_social_medium.svg" alt="medium"/></a>
+      </section>
+    </div>
+    <script src="navbar.js"></script>
+  </body>
+  
+</html>
