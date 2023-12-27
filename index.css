@@ -19,7 +19,7 @@
     width:100%;
     top:0;
     left:0;
-    background:var(--main-white);
+    background:var(--main-white, #FFFFFF);
     overflow-x: hidden;
     
   }
@@ -42,7 +42,7 @@
   .welcome-section{
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 100px;
+  gap: 30px;
   
   width: 100%;
   
@@ -66,8 +66,9 @@
     font-size: 40px;
     line-height: auto;
     text-transform: capitalize;
-    color:var(--main-black);
+    color:var(--main-black, #000000);
   }
+
   .intro p{
     width:100%;
     font-style: normal;
@@ -76,7 +77,6 @@
     line-height: 200%;
     color: #4F4F4F;
   }
-  
   
   .profile-image{
     width:100%;
@@ -201,7 +201,7 @@
       font-size: 20px;
     }
     .intro p{
-      font-size: 14px;
+      font-size: 12px;
       text-align:center;
     }
     h3{
