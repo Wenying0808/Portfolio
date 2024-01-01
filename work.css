@@ -55,7 +55,7 @@
     }
   
     
-    .project-tile{
+    .project-tile-available, .project-tile-unavailable{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -74,9 +74,16 @@
   
     }
     
-    .project-tile:hover{
-    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.3));
-    cursor:hand;
+    .project-tile-available:hover{    
+        cursor:hand;
+        filter:drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.3));
+    }
+
+    /* front-end development */
+    
+    .project-tile-unavailable:hover{
+        cursor:pointer;
+        box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.10);   
     }
     
     .project-img{
