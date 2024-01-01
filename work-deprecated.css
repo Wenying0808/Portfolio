@@ -59,18 +59,8 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
     border-radius: 10px;
-    background: var(--main-white, #FFF);
-    /* Website/Project Card-Default */
-    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.10);
-
-    /* Remove text-decoration for <a> element */
-    text-decoration: none;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.1));
   
     }
     
@@ -82,67 +72,57 @@
     .project-img{
       display:block;
       width:100%;
-      border-radius: 10px 10px 0 0;
+      border-radius: 10px;
     }
 
-    .project-intro{
+    .project-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
         display: flex;
-        padding: 16px;
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+        border-radius: 10px;
+
         flex-direction: column;
         align-items: flex-start;
-        gap: 10px;
-        align-self: stretch;
+        gap: 20px;
+
+        flex-shrink: 0;
+        background: rgba(0, 0, 0, 0.60);
+
+        opacity: 0;
+        transition: opacity 0.3s ease-in;
     }
 
-    .project-intro-title{
-        align-self: stretch;
-        color: var(--main-black, #000);
+    .project-overlay-title{
+        color: var(--main-white, #FFFFFF);
+        /* Website/Project/Name */
         font-family: "Open Sans";
-        font-size: 20px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
     }
 
-    .project-intro-chips{
-        display: flex;
-        align-items: flex-start;
-        gap: 10px;
+    .project-overlay-description{
+        flex: 1 0 0;
         align-self: stretch;
-    }
+        color: var(--main-white, #FFFFFF);
 
-    .chip{
-        display: flex;
-        padding: 4px 10px;
-        justify-content: center;
-        align-items: center;
-
-        border-radius: 4px;
-        background: var(--main-zumtho, #E1EBFF);
-
-        /* Text */
-        color: var(--main-purple, #4758DC);
-        font-family: Open Sans;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%; /* 21px */
-    }
-
-    .project-intro-description{
-        height: 42px;
-        align-self: stretch;
-
-        color: var(--main-gray, #757575);
+        /* Website/Project/Description */
         font-family: "Open Sans";
-        font-size: 14px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        line-height: 150%; /* 21px */
+        line-height: 150%; /* 24px */
     }
 
 
-   
+    .project-tile:hover .project-overlay{
+        opacity: 1;
+    }
 
 
     @media (max-width: 50rem){
@@ -152,22 +132,18 @@
             grid-gap: 2rem;
         }
         
+        .project-overlay{
+          padding: 20px;
+          gap: 12px;
+        }
         
-        .project-intro-title{
-          font-size: 14px;
+        
+        .project-overlay-title{
+          font-size: 16px;
         }
 
-        .project-intro-description{
-          font-size: 11px;
-        }
-
-        .project-intro-chips{
-            gap:8px;
-        }
-
-        .chip{
-            padding: 2px 8px;
-            font-size: 12px;
+        .project-overlay-description{
+          font-size: 12px;
         }
 
     }
