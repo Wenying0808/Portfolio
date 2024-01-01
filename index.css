@@ -122,7 +122,7 @@
   line-height: 27px;
   letter-spacing: 0em;
   text-align: center;
-  color: var(--main-black);
+  color: var(--main-black, #000000);
   }
   
   .expertise-tile p{
@@ -144,7 +144,7 @@
   
   width: 100%;
   
-  background: #FBFFFF;
+  background:var(--Background-1, #FBFFFF);
   }
   
   .iam-grids{

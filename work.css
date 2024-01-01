@@ -18,7 +18,7 @@
     width:100%;
     top:0;
     left:0;
-    background:var(--main-white);
+    background:var(--main-white, #FFFFFF);
     overflow-x: hidden;
     
   }
@@ -41,7 +41,7 @@
     
     width: 100%;
     
-    background: var(--Background-1);
+    background: var(--Background-1, #FBFFFF);
     }
     
     .projects-grids{
@@ -97,7 +97,7 @@
     }
 
     .project-overlay-title{
-        color: var(--main-white);
+        color: var(--main-white, #FFFFFF);
         /* Website/Project/Name */
         font-family: "Open Sans";
         font-size: 24px;
@@ -109,7 +109,7 @@
     .project-overlay-description{
         flex: 1 0 0;
         align-self: stretch;
-        color: var(--main-white);
+        color: var(--main-white, #FFFFFF);
 
         /* Website/Project/Description */
         font-family: "Open Sans";
