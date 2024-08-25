@@ -1,5 +1,5 @@
 .navbar{
-    box-sizing:border-box;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -19,12 +19,12 @@
   
   }
   
-  .website-logo{
+  .website-logo {
     width:56px;
     height:56px;
   }
   
-  .navbarLabel{
+  .navbarLabel {
     list-style-type: none;
     margin:0 0 0 0;
     padding: 0;
@@ -36,8 +36,7 @@
     opacity: 1;
   }
   
-  
-  li a{
+  .navbarLabel li a {
   text-decoration:none;
   font-size: 20px;
   font-weight: 600;
@@ -47,72 +46,74 @@
   color: var(--main-black, #000000);
   }
   
-  li a:hover{
+  .navbarLabel li a:hover {
     color: var(--main-purple, #4758DC);
-    cursor:hand;
+    cursor: hand;
   }
 
   /* Website size color the active page differently*/
-  .ActivePage a{
+  .navbarLabel .ActivePage a{
     color: var(--main-purple, #4758DC);
-    cursor:pointer;
-    font-weight:800
+    cursor: pointer;
+    font-weight: 800;
   }
 
   /* Mobile size color the active page differently*/
-
-  .ActivePage{
+  .navbarMenu .ActivePage a {
     color: var(--main-purple, #4758DC);
-    cursor:pointer;
-    font-weight:800
+    cursor: pointer;
+    font-weight: 800;
   }
 
 
-  .navbarMenuIconDiv{
-    display:none;
+  .navbarMenuIconDiv {
+    display: none;
   }
 
-
-  .navbarMenu{
-    display:none;
+  .navbarMenu {
+    display: none;
   }
 
+  @media (max-width: 50rem) {
 
-  @media (max-width: 50rem){
-
-    .navbar{
+    .navbar {
       padding: 20px 20px;
+      border-bottom: 2px solid #4758DC;
     }
 
-    .navbarLabel{
-      display:none;
-    }
-
-    li a{
-      font-size:16px;
-    }
-
-    .navbarMenuIconDiv{
-      display:flex;
-    }
-
-    .navbarOpenMenu{
-      cursor: pointer;
-    }
-
-
-    .navbarCloseMenu{
-      display:none;
-    }
-  
-
-    .navbarMenu{
+    .navbarLabel {
       display: none;
     }
 
-    .navbarMenu a{
-      width: 100%;
+    .navbarLabel li a {
+      font-size:16px;
+    }
+
+    .navbarMenuIconDiv {
+      display:flex;
+    }
+
+    .navbarOpenMenu {
+      cursor: pointer;
+    }
+
+    .navbarCloseMenu{
+      display: none;
+      cursor: pointer;
+    }
+
+    .navbarMenu {
+      display: none;
+    }
+
+    .navbarMenu li {
       height: 56px;
+      width: 100%;
+    }
+
+    .navbarMenu li a {
+      display: flex;
+      width: 100%;
       padding: 16px 10px;
       justify-content: center;
       align-items: center;
@@ -135,8 +136,8 @@
   }
 
   /*JS file adds additional class to show the navmenu when click the openmenu icon*/
-  .navbarMenu.show-menu{
-    position:relative;
+  .navbarMenu.show-menu {
+    position: fixed;
     top: 96px;
     left: 0;
     display: flex;
@@ -146,6 +147,5 @@
     align-items: flex-start;
     flex-shrink: 0;
     background: rgba(0, 0, 0, 0.25);
-
   }
 
