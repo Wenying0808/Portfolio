@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', function () {
       <ul class="navbarMenu">
         <li><a href="index.html" data-page="aboutme">About Me</a></li>
         <li><a href="work.html" data-page="work">Work</a></li> 
+        <li><a href="frontEnd.html" data-page="frontend">Front End Development</a></li>
         <li><a href="igxPlatform.html" data-page="enpicom">IGX Platform</a></li>
         <li><a href="sciaEngineer.html" data-page="scia">SCIA Engineer</a></li>
         <li><a href="breathingApp.html" data-page="somnox">Breathing App</a></li>
-        <li><a href="frontEnd.html" data-page="frontend">Front End Development</a></li>
       </ul>
     </nav>
   `;
