@@ -1,22 +1,29 @@
-.social-section{
-    position:relative;
+.social-section {
+    position: relative;
     left:0;
     bottom:0;
-    width:100%;
+
+    width: 100%;
+    padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 20px;
   }
+
+  .social-section a{
+    width: 24px;
+    height: 24px;
+    cursor: hand;
+  }
   
-  .social-section img{
-    cursor:hand;
-    width:24px;
-    height:24px;
+  .social-section img {
+    width: 24px;
+    height: 24px;
   }
 
-  .social-section img:hover{
+  .social-section img:hover {
     transform: scale(1.5);
   }
 
